@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Formulario de alta</title>
+</head>
+<body>
+	<form id="FormAltaUsuario" method = 'POST' action=FormularioAltaServlet.jr>
+		<h1>Bienvenido a Trackmasters</h1>
+		<h2>Por favor ingrsa tus datos para operar con Trackmasters</h2>
+		<fieldset>
+		<table>
+			<tr>
+				<td>Ingrese nombre</td>
+				<td><input type="text" name="NombreUsuario"  id="NombreUsuario" required></td>
+			</tr>
+			<tr>
+				<td>Ingrese Apellido</td>
+				<td><input type="text" name="ApellidoUsuario" id="ApellidoUsuario"></td>
+			</tr>
+				<tr>
+				<td>Ingrese email</td>
+				<td><input type="text" name="EmailUsuario" id="EmailUsuario"></td>
+			</tr>
+		
+				<!-- <td>Ingrese estado de cuenta</td> -->
+				<td><input type="hidden" value="activo" name="EstadoCuentaUsuario"></td>
+	
+			<tr>
+				<td>Ingrese dirección de envío</td>
+				<td><input type="text" name="DireccionEnvioUsuario" id="DireccionEnvioUsuario"></td>
+			</tr>
+			<tr>
+				<td><input type="submit"name value="Registrar" name="RegistrarUsuario"></td>
+			</tr>
+		</table>
+		</fieldset>
+	</form>	
+</body>
+</html>
